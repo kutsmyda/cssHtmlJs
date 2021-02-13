@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.nav-item {
+  margin: 5px;
+  padding: 2vh;
+  font-size: 6vh;
+  font-weight: bold;
+  background-color: rgba(155, 155, 230, 0.4);
+  cursor: pointer;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.nav-item-active {
+  color: yellowgreen;
+  font-size: 8vh;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  transition: 0.4s;
+}
+.slider-item {
+  position: absolute;
+  top: -2vh;
+  left: -2vw;
+  width: 104vw;
+  height: 104vh;
+  list-style: none;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translateY(-2vh);
+}
+.slider-item-active {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
